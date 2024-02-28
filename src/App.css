@@ -8,10 +8,6 @@ body {
   background-color: #111111;
 }
 
-.CustomButton:hover {
-  color: white;
-}
-
 .CustomButton:hover svg {
   translate: 0.25rem -0.25rem;
 }

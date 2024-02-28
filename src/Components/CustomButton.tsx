@@ -5,7 +5,7 @@ interface Props {
 
 export const CustomButton = ({ Text, Icon }: Props) => {
   return (
-    <button className="text-[#696969] text-[1.5rem] CustomButton">
+    <button className="text-[#696969] text-[1.5rem] hover:text-white CustomButton">
       {Text} {Icon}
     </button>
   );

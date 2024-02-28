@@ -9,8 +9,10 @@ export const NavigationBar = () => {
         />
       </div>
       <div className="w-[50%] flex flex-wrap items-center justify-end">
-        <button className="mx-2 text-[1.3rem]">Work</button>
-        <button className="mx-8 text-[1.3rem]">About</button>
+        <button className="hover:text-[#696969] text-[1.3rem]">Work</button>
+        <button className="hover:text-[#696969] text-[1.3rem] mx-8">
+          About
+        </button>
       </div>
     </div>
   );
