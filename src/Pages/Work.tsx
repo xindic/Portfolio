@@ -53,9 +53,21 @@ function Work() {
           <CustomButton Text="Showcase" />
         </div>
         <div className="flex flex-col items-center justify-center mx-20 w-[30rem] h-[21rem] space-y-1">
-          <CustomButton Text="Email" Icon={EmailIcon} />
-          <CustomButton Text="Discord" Icon={ContactIcon} />
-          <CustomButton Text="Github" Icon={ContactIcon} />
+          <CustomButton
+            Text="Email"
+            Icon={EmailIcon}
+            TextToCopy="ayaanlums@gmail.com"
+          />
+          <CustomButton
+            Text="Discord"
+            Icon={ContactIcon}
+            Link={"https://discord.com/users/489824470941433856"}
+          />
+          <CustomButton
+            Text="Github"
+            Icon={ContactIcon}
+            Link={"https://github.com/xindic"}
+          />
         </div>
       </div>
       <div>© 2024 xindic. All rights reserved</div>
