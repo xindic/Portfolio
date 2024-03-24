@@ -49,7 +49,7 @@ function Work() {
 
       <div className="flex items-center justify-center my-20">
         <div className="flex flex-col items-center justify-center mx-20 w-[30rem] h-[21rem] space-y-1">
-          <CustomButton Text="Projects" />
+          <CustomButton Text="Projects" Redirect="/projects" />
           <CustomButton Text="Showcase" />
         </div>
         <div className="flex flex-col items-center justify-center mx-20 w-[30rem] h-[21rem] space-y-1">

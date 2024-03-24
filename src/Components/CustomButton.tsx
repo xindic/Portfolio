@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 interface Props {
   Text: string;
   Icon?: React.ReactElement<SVGElement>;
   Link?: string;
   TextToCopy?: string;
+  Redirect?: string;
 }
 
 const CopyToClipboard = (Text: string) => {
@@ -20,15 +23,34 @@ const CopyToClipboard = (Text: string) => {
   }
 };
 
-export const CustomButton = ({ Text, Icon, Link, TextToCopy }: Props) => (
-  <button
-    className="text-[#696969] text-[1.5rem] hover:text-white CustomButton"
-    onClick={() =>
-      TextToCopy
-        ? CopyToClipboard(TextToCopy)
-        : Link && window.open(Link, "_blank")
+export const CustomButton = ({
+  Text,
+  Icon,
+  Link,
+  TextToCopy,
+  Redirect,
+}: Props) => {
+  const Navigate = useNavigate();
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault(); // Prevent default button behavior
+
+    if (Redirect) {
+      Navigate(`/${Redirect}`);
+      console.log(Redirect);
+    } else if (TextToCopy) {
+      CopyToClipboard(TextToCopy);
+    } else if (Link) {
+      window.open(Link, "_blank");
     }
-  >
-    {Text} {Icon}
-  </button>
-);
+  };
+
+  return (
+    <button
+      className="text-[#696969] text-[1.5rem] hover:text-white CustomButton"
+      onClick={handleClick}
+    >
+      {Text} {Icon}
+    </button>
+  );
+};
