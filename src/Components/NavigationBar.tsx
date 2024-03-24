@@ -1,3 +1,5 @@
+import { CustomButton } from "./CustomButton";
+
 export const NavigationBar = () => {
   return (
     <div className="h-[6rem] flex flex-wrap items-center justify-start sticky">
@@ -15,10 +17,21 @@ export const NavigationBar = () => {
         Text copied to clipboard!
       </div>
       <div className="w-[40%] flex flex-wrap items-center justify-end">
-        <button className="hover:text-[#696969] text-[1.3rem]">Work</button>
-        <button className="hover:text-[#696969] text-[1.3rem] mx-8">
-          About
-        </button>
+        <CustomButton
+          Text="Work"
+          Color="#ffffff"
+          Hover="#696969"
+          Size="1.3rem"
+          Redirect="/"
+        ></CustomButton>
+        <CustomButton
+          Text="About"
+          Color="#ffffff"
+          Hover="#696969"
+          Size="1.3rem"
+          MarginX="8"
+          Redirect="/about"
+        ></CustomButton>
       </div>
     </div>
   );

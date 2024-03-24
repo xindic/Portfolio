@@ -2,6 +2,10 @@ import { useNavigate } from "react-router-dom";
 
 interface Props {
   Text: string;
+  Size?: string;
+  Color?: string;
+  Hover?: string;
+  MarginX?: string;
   Icon?: React.ReactElement<SVGElement>;
   Link?: string;
   TextToCopy?: string;
@@ -25,6 +29,10 @@ const CopyToClipboard = (Text: string) => {
 
 export const CustomButton = ({
   Text,
+  Size = "1.5rem",
+  Color = "#696969",
+  Hover = "#ffffff",
+  MarginX = "0",
   Icon,
   Link,
   TextToCopy,
@@ -37,7 +45,6 @@ export const CustomButton = ({
 
     if (Redirect) {
       Navigate(`/${Redirect}`);
-      console.log(Redirect);
     } else if (TextToCopy) {
       CopyToClipboard(TextToCopy);
     } else if (Link) {
@@ -47,7 +54,7 @@ export const CustomButton = ({
 
   return (
     <button
-      className="text-[#696969] text-[1.5rem] hover:text-white CustomButton"
+      className={`text-[${Color}] text-[${Size}] mx-${MarginX} hover:text-[${Hover}] CustomButton`}
       onClick={handleClick}
     >
       {Text} {Icon}

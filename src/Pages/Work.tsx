@@ -50,13 +50,14 @@ function Work() {
       <div className="flex items-center justify-center my-20">
         <div className="flex flex-col items-center justify-center mx-20 w-[30rem] h-[21rem] space-y-1">
           <CustomButton Text="Projects" Redirect="/projects" />
-          <CustomButton Text="Showcase" />
+          <CustomButton Text="Showcase" Redirect="/showcase" />
         </div>
         <div className="flex flex-col items-center justify-center mx-20 w-[30rem] h-[21rem] space-y-1">
           <CustomButton
             Text="Email"
             Icon={EmailIcon}
             TextToCopy="ayaanlums@gmail.com"
+            Hover="#FFFFFF"
           />
           <CustomButton
             Text="Discord"
