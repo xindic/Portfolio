@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter basename={import.meta.env.DEV ? "/" : "/portfolio/"}>
       <Routes>
-        <Route path="/portfolio" element={<Work />} />
+        <Route path="/" element={<Work />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
