@@ -11,3 +11,12 @@ body {
 .CustomButton:hover svg {
   translate: 0.25rem -0.25rem;
 }
+
+.Scrollable {
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -2,7 +2,7 @@ import { CustomButton } from "./CustomButton";
 
 export const NavigationBar = () => {
   return (
-    <div className="h-[6rem] flex flex-wrap items-center justify-start sticky">
+    <div className="w-[100vw] h-[10vh] flex flex-wrap items-center justify-start sticky">
       <div className="w-[40%]">
         <img
           className="rounded-full w-[4rem] mx-8"
