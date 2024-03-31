@@ -9,9 +9,9 @@ const ContactIcon = (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className="inline-block ml-1"
   >
     <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -26,9 +26,9 @@ const EmailIcon = (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className="inline-block ml-1"
   >
     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
@@ -57,7 +57,6 @@ function Work() {
             Text="Email"
             Icon={EmailIcon}
             TextToCopy="ayaanlums@gmail.com"
-            Hover="#FFFFFF"
           />
           <CustomButton
             Text="Discord"

@@ -29,7 +29,7 @@ export const NavigationBar = () => {
           Color="#ffffff"
           Hover="#696969"
           Size="1.3rem"
-          MarginX="8"
+          MarginX="2rem"
           Redirect="/about"
         ></CustomButton>
       </div>

@@ -41,7 +41,7 @@ export const CustomButton = ({
   const Navigate = useNavigate();
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault(); // Prevent default button behavior
+    event.preventDefault();
 
     if (Redirect) {
       Navigate(`/${Redirect}`);
@@ -54,7 +54,15 @@ export const CustomButton = ({
 
   return (
     <button
-      className={`text-[${Color}] text-[${Size}] mx-${MarginX} hover:text-[${Hover}] CustomButton`}
+      className={"CustomButton"}
+      style={{
+        color: Color,
+        fontSize: Size,
+        marginLeft: MarginX,
+        marginRight: MarginX,
+      }}
+      onMouseEnter={(event) => (event.currentTarget.style.color = Hover)}
+      onMouseLeave={(event) => (event.currentTarget.style.color = Color)}
       onClick={handleClick}
     >
       {Text} {Icon}
