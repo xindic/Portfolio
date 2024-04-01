@@ -38,21 +38,21 @@ const EmailIcon = (
 
 function Work() {
   return (
-    <div className="h-screen w-screen flex-col flex-wrap items-center justify-center">
+    <div className="h-screen w-screen">
       <NavigationBar />
-      <div className="font-generalsans-semibold text-[25vh] w-[100vw] h-[30vh] flex items-center justify-center">
+      <div className="font-generalsans-semibold text-[25vw] lg:text-[15vw] w-screen h-[30vh] flex items-center justify-center">
         Hello
       </div>
-      <div className="text-[#848484] text-[3.5vh] w-[100vw]">
+      <div className="text-[#848484] text-[5vw] lg:text-[2vw] w-screen h-[5vh] flex items-center justify-center">
         I'm xindic — Fullstack Developer
       </div>
 
-      <div className="flex items-center justify-center w-[100vw] h-[51.5vh]">
-        <div className="flex flex-col items-center justify-center mx-20 w-[30rem] h-[21rem] space-y-1">
+      <div className="flex items-center justify-center w-screen h-[50vh]">
+        <div className="flex flex-col items-center justify-center w-[35vw] h-[50vh] space-y-1">
           <CustomButton Text="Projects" Redirect="/projects" />
           <CustomButton Text="Showcase" Redirect="/showcase" />
         </div>
-        <div className="flex flex-col items-center justify-center mx-20 w-[30rem] h-[21rem] space-y-1">
+        <div className="flex flex-col items-center justify-center w-[35vw] h-[50vh] space-y-1">
           <CustomButton
             Text="Email"
             Icon={EmailIcon}
@@ -70,7 +70,9 @@ function Work() {
           />
         </div>
       </div>
-      <div>© 2024 xindic. All rights reserved</div>
+      <div className="w-screen h-[5vh] flex items-center justify-center">
+        © 2024 xindic. All rights reserved
+      </div>
     </div>
   );
 }
