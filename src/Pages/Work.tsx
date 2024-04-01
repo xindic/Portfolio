@@ -40,14 +40,14 @@ function Work() {
   return (
     <div className="h-screen w-screen flex-col flex-wrap items-center justify-center">
       <NavigationBar />
-      <div className="font-generalsans-semibold text-[14rem] my-[-2rem]">
+      <div className="font-generalsans-semibold text-[25vh] w-[100vw] h-[30vh] flex items-center justify-center">
         Hello
       </div>
-      <div className="text-[#848484] text-[2rem] w-[30%] mx-auto">
+      <div className="text-[#848484] text-[3.5vh] w-[100vw]">
         I'm xindic — Fullstack Developer
       </div>
 
-      <div className="flex items-center justify-center my-20">
+      <div className="flex items-center justify-center w-[100vw] h-[51.5vh]">
         <div className="flex flex-col items-center justify-center mx-20 w-[30rem] h-[21rem] space-y-1">
           <CustomButton Text="Projects" Redirect="/projects" />
           <CustomButton Text="Showcase" Redirect="/showcase" />
