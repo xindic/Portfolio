@@ -12,7 +12,7 @@ export const NavigationBar = () => {
       </div>
       <div
         id="CopyText"
-        className="w-[20%] text-[#c4c4c4] text-[1.2rem] transition-opacity duration-500 ease-in-out opacity-0"
+        className="w-[20%] text-[#c4c4c4] text-[2vw] lg:text-[1.2vw] transition-opacity duration-500 ease-in-out opacity-0"
       >
         Text copied to clipboard!
       </div>
