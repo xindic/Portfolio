@@ -54,7 +54,7 @@ export const CustomButton = ({
 
   return (
     <button
-      className={"CustomButton"}
+      className="CustomButton"
       style={{
         color: Color,
         fontSize: Size,

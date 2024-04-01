@@ -2,7 +2,7 @@ import { CustomButton } from "./CustomButton";
 
 export const NavigationBar = () => {
   return (
-    <div className="w-[100vw] h-[10vh] flex flex-wrap items-center justify-start">
+    <div className="w-[100vw] h-[10vh] flex items-center justify-start">
       <div className="w-[40%]">
         <img
           className="rounded-full w-[4rem] mx-8"
@@ -16,7 +16,7 @@ export const NavigationBar = () => {
       >
         Text copied to clipboard!
       </div>
-      <div className="w-[40%] flex flex-wrap items-center justify-end">
+      <div className="w-[40%] flex items-center justify-end">
         <CustomButton
           Text="Work"
           Color="#ffffff"
@@ -29,7 +29,7 @@ export const NavigationBar = () => {
           Color="#ffffff"
           Hover="#696969"
           Size="1.3rem"
-          MarginX="2rem"
+          MarginX="2vh"
           Redirect="/about"
         ></CustomButton>
       </div>
