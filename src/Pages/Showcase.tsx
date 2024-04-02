@@ -7,20 +7,13 @@ const Showcase = () => {
       <NavigationBar />
       <div className="w-[80vw] h-[85vh] mx-[10vw] Scrollable">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full sm:mb-4 gap-y-10">
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
-          <Template Image="https://tr.rbxcdn.com/dec317dd2c12c80cdfbbf56addb86103/768/432/Image/Png" />
+          <Template Video="videos/golden.mp4" />
+          <Template Video="videos/fireball.mp4" />
+          <Template Video="videos/impact.mp4" />
+          <Template Video="videos/parry.mp4" />
+          <Template Video="videos/slashes.mp4" />
+          <Template Video="videos/fireslash.mp4" />
+          <Template Video="videos/cero.mp4" />
         </div>
       </div>
     </div>
