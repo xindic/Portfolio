@@ -8,9 +8,11 @@ import Showcase from "./Pages/Showcase";
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/portfolio/"}>
+    <BrowserRouter
+      basename={import.meta.env.DEV ? "/portfolio" : "/portfolio/"}
+    >
       <Routes>
-        <Route path="/" element={<Work />} />
+        <Route path="/portfolio" element={<Work />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/showcase" element={<Showcase />} />
