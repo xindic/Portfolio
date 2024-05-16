@@ -1,8 +1,8 @@
 interface Props {
-  Name: string;
+  Name?: string;
   Image?: string;
   Description?: string;
-  Link: string;
+  Link?: string;
   Video?: string;
 }
 
