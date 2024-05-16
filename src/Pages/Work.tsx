@@ -70,9 +70,6 @@ function Work() {
           />
         </div>
       </div>
-      {/* <div className="w-screen h-[5vh] flex items-center justify-center">
-        © 2024 xindic. All rights reserved
-      </div> */}
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { NavigationBar } from "../Components/NavigationBar";
 
 const About = () => {
   return (
-    <div className="h-screen w-screen flex-col flex-wrap items-center justify-center">
+    <div className="h-screen w-screen max-w-[100%] max-h-[100%] flex-col flex-wrap items-center justify-center">
       <NavigationBar />
       <div className="text-[8rem] my-[-2rem]">xindic</div>
       <div className="text-[#848484] text-[4rem]">Fullstack Developer</div>
@@ -17,8 +17,6 @@ const About = () => {
         </div>
         <div className="w-[60rem] h-[20rem]"></div>
       </div>
-
-      <div>© 2024 xindic. All rights reserved</div>
     </div>
   );
 };
